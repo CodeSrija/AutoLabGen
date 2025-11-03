@@ -72,5 +72,12 @@ project/
     
 5. Open `http://127.0.0.1:8000`.
 
+You just need to add a small section in your `README.md`. Keep it simple and professional. Add this at the top or bottom:
+
+---
+
+* **Name:** Duruseti Srija
+* **University:** Indian Institute of Technology (IIT) Kanpur
+* **Department:** Mechanical Engineering
 
 ---
