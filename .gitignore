@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pkl
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables
+.env
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Uploads & generated files
+uploads/
+*.log
+
+# Model weights
+models/trocr/
+models/tablenet/
+trocr_finetuned_*/
+tablenet_finetuned_*/
+
+# Reports / output files
+*.pdf
+*.docx
+
+# FastAPI / Uvicorn
+logs/.env

@@ -1,0 +1,81 @@
+/* ---------- GLOBAL ---------- */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+  color: #00bfa6;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00bfa6;
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* ---------- FORM SECTIONS ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+/* ---------- INPUTS & BUTTONS ---------- */
+input[type="file"] {
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #00bfa6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #009e8f;
+}
+
+/* ---------- MESSAGES ---------- */
+p {
+  color: #b0b0b0;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  margin-top: auto;
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 40px;
+}

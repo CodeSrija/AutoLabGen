@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab Report Generator</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="icon" href="/static/favicon.ico">
+</head>
+<body>
+  <h2>Upload Lab Manual and Dataset</h2>
+
+  <form id="reportForm" enctype="multipart/form-data">
+    <label>Lab Manual:</label>
+    <input type="file" name="lab_manual" required><br><br>
+
+    <label>Dataset (optional):</label>
+    <input type="file" name="dataset"><br><br>
+
+    <label>Custom Prompt (optional):</label>
+    <textarea name="prompt" rows="4" cols="50" placeholder="Add custom instructions..."></textarea><br><br>
+
+    <button type="submit">Generate Lab Report</button>
+  </form>
+
+  <h3>Generated Report:</h3>
+  <pre id="output"></pre>
+
+  <script>
+    document.getElementById("reportForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(e.target);
+
+      const response = await fetch("/generate_report", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      document.getElementById("output").textContent = data.report || "Error generating report.";
+    });
+  </script>
+</body>
+</html>
